@@ -1,0 +1,5 @@
+EJECUTABLE DE PYINSTALLER
+import sys, os
+
+if hasattr(sys, '_MEIPASS'): # True para inicio.exe, False para inicio.py
+    os.chdir(sys._MEIPASS)   # Ahora se cumple: os.getcwd() == sys._MEIPASS
